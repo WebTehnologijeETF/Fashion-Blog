@@ -1,0 +1,124 @@
+@import url(http://fonts.googleapis.com/css?family=Lobster);
+@import url(http://fonts.googleapis.com/css?family=Damion);
+@import url(http://fonts.googleapis.com/css?family=Oxygen);
+@import url(http://fonts.googleapis.com/css?family=Orbitron);
+@import url(http://fonts.googleapis.com/css?family=Ubuntu);
+#okvir{
+	width:960px;
+	margin:0 auto;
+}
+#naslov{
+	position:relative;
+	width: 350px;
+	height:170px;
+	margin:0 auto;
+}
+#naslov h1{
+	font-family:Lobster;
+	font-size:50pt;
+	right:0;
+	top:0;
+	margin-bottom: 0;
+	color:#404040;
+}
+#naslov h2{
+	font-family:Damion;
+	font-size:15pt;
+	text-align:right;
+	color:#404040;
+	bottom:0;
+	margin-top: 0;
+	right:0;
+}
+#meni{
+	background-color:#404040;
+	padding: 0;
+}
+#meni ul{
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+#meni ul li{
+	display: inline-block;
+	margin: 0 2em;
+	padding: 10px 10px;
+}
+#meni ul li a{
+	font-family:Oxygen;
+	color:#F0FFFF;
+	text-decoration:none;
+}
+li.active{
+	background-color:#A0A0A0;
+}
+#glavni{
+	width:75%;
+	float:left;
+	
+}
+#desno{
+	width:25%;
+	float:right;
+	margin-top:50px;
+	padding-bottom: 2em;
+	
+}
+#podnozje{
+	clear:both;
+	text-align:center;
+	border-top:2px solid #E8E8E8;
+}
+
+.novost {
+	margin-top:50px;
+	padding-bottom: 2em;
+	border-bottom: 2px solid #E8E8E8;
+}
+
+.novost p {
+	font-family:Ubuntu;
+	margin-bottom:-15px;
+	color:#404040;
+	
+}
+.novost h4{
+	font-family:Orbitron;
+}
+#ikone{
+	text-align:center;
+}
+#ikone a{
+	text-decoration:none;
+}
+#ikone img{
+	margin:0 1em;
+
+}
+.reklama{
+	text-align:center;
+	margin-top:30px;
+	padding-bottom:2em;
+	border-bottom:2px solid #E8E8E8;
+}
+#podstranice p{
+	color:#404040;
+	font-family:Ubuntu;
+}
+#podstranice h3{
+	color:#404040;
+	font-size:20pt;
+	font-family:Ubuntu;
+
+}
+.novostLjepota{
+	margin-top:50px;
+	padding-bottom: 2em;
+	border-bottom: 2px solid #E8E8E8;
+}
+.novostLjepota h4{
+	font-family:Orbitron;
+}
+#podstranice ul{
+	list-style-image: url("http://www.w3schools.com/cssref/sqpurple.gif");
+}
