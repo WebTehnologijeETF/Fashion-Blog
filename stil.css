@@ -111,14 +111,6 @@ li.active{
 	font-family:Ubuntu;
 
 }
-.novostLjepota{
-	margin-top:50px;
-	padding-bottom: 2em;
-	border-bottom: 2px solid #E8E8E8;
-}
-.novostLjepota h4{
-	font-family:Orbitron;
-}
 #podstranice ul{
 	list-style-image: url("http://www.w3schools.com/cssref/sqpurple.gif");
 }
