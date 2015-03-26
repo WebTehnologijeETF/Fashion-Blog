@@ -74,6 +74,7 @@ li.active{
 .novost {
 	margin-top:50px;
 	padding-bottom: 2em;
+	border-bottom: 1px solid #E8E8E8;
 	margin-bottom:10px;
 }
 
@@ -113,5 +114,19 @@ li.active{
 
 }
 #podstranice ul{
-	list-style-image: url("http://www.w3schools.com/cssref/sqpurple.gif");
+	list-style-image: url("slicicaZaLinkove.png");
+}
+#podstranice ul li{
+	font-family:Ubuntu;
+	font-size:20px;
+}
+li a{
+	display:block;
+}
+li a:link{
+	text-decoration:none; 
+}
+li a:hover{
+	text-decoration:underline;
+	color:red;
 }
