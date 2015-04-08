@@ -171,7 +171,7 @@ label{
 }
 input[type="text"]{
 	font-family:Orbitron;
-	width: 96%;
+	width: 85%;
 	height:30px;
 	padding: 5px;
 	border:1px solid #404040;
@@ -181,7 +181,7 @@ input[type="text"]{
 
 textarea{
 	font-family:Orbitron;
-	width: 98%;
+	width: 85%;
 	height:100px;
 	padding:2px;
 	margin-bottom:10px;
@@ -198,4 +198,16 @@ input[type="submit"]{
 	border-radius:5px;	
 }
 
-
+.kontrola-greska {
+	display: none;
+}
+.prikazi-gresku .kontrola-greska {
+	display: block;
+}
+img.kontrola-greska {
+    float: right;
+}
+p.kontrola-greska {
+	margin-top: -10px;
+	color:red !important;
+}
