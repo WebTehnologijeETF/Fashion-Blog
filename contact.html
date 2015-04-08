@@ -6,6 +6,7 @@
 		<link rel="stylesheet" type="text/css" href="stil.css">
 	</head>
 	<body>
+		<script type="text/javascript" src="datoteka1.js"></script>
 		<div id="okvir">
 			<div id="naslov">
 				<h1>EMFASHION</h1>
@@ -25,16 +26,28 @@
 				<div id="podstranice">
 					<h3>Contact</h3>
 					<p>I love recieving emails from readers or followers, so please do not hesitate to contact me with queries or just general chit chat!</p>
-					<FORM>
+					<FORM onsubmit="return validirajFormu()">
 						<fieldset>
 							<label>NAME</label>
-							<input name="ime" type="text" placeholder="First and last name">
+							<div class="kontrola">
+								<input name="ime" id="name" type="text" placeholder="First and last name">
+								<img class="kontrola-greska" src="warning.png" alt="uzvicnik">
+								<p class="kontrola-greska">Ime nije validno!</p>
+							</div>
 							<label>EMAIL</label>
-							<input name="email" type="text" placeholder="example@domain.com">
+							<div class="kontrola">
+								<input name="email" id="email" type="text" placeholder="example@domain.com">
+								<img class="kontrola-greska" src="warning.png" alt="uzvicnik">
+								<p class="kontrola-greska">Email adresa nije validna!</p>
+							</div>
 							<label>SUBJECT</label>
-							<input name="naslov" type="text" placeholder="Subject">
+							<input name="naslov" id="subject" type="text" placeholder="Subject">
 							<label>YOUR MESSAGE</label>
-							<textarea name="poruka" placeholder="Type Here"></textarea>
+							<div class="kontrola">
+								<textarea name="poruka" id="message" placeholder="Type Here"></textarea>
+								<img class="kontrola-greska" src="warning.png" alt="uzvicnik">
+								<p class="kontrola-greska">Poruka je obavezna!</p>
+							</div>
 							<input type="submit" value="SEND">
 						</fieldset>
 					</FORM>
