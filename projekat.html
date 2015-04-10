@@ -5,6 +5,7 @@
 		<title>Glavni html</title>
 		<link rel="stylesheet" type="text/css" href="stil.css">
 	</head>
+
 	<body>
 		<div id="okvir">
 			<div id="naslov">
@@ -13,10 +14,16 @@
 			</div>
 			<nav>
 				<ul>
-					<li class="active"><a href="projekat.html">Home</a></li>
+					<li><a href="projekat.html">Home</a></li>
 					<li><a href="about.html">About</a></li>
 					<li><a href="contact.html">Contact</a></li>
-					<li><a href="fashion.html">Fashion</a></li>
+					<li id="dropdown"><a href="#">Fashion <span style="font-size: 9px">&#9660;</span></a>
+						<ul id="menu">
+							<li><a href="fashion.html">Home</a></li>
+							<li><a href="trends.html">Trends</a></li>
+							<li><a href="wear.html">3 ways to wear</a></li>
+						</ul>
+					</li>
 					<li><a href="beauty.html">Beauty</a></li>
 					<li><a href="links.html">Links</a></li>
 				</ul>
@@ -89,5 +96,6 @@
 				<p>Copyright (c) 2015 EMFASHION.ba</p>
 			</div>
 		</div>
+		<script type="text/javascript" src="datoteka2.js"></script>
 	</body>
 </html>

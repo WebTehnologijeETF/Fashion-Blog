@@ -34,25 +34,46 @@
 nav{
 	background-color:#404040;
 	padding: 0;
+	text-align: center;
 }
 nav ul{
-    text-align: center;
+    text-align:center;
+    display: inline;
+    list-style:none;
     padding: 0;
-    margin: 0;
 }
 nav ul li{
 	display: inline-block;
+	position:relative;
 	margin: 0 2em;
 	padding: 10px 10px;
+}
+ul li:hover,
+ul li.otvoreno {
+	background:#A0A0A0;
 }
 nav ul li a{
 	font-family:Oxygen;
 	color:#F0FFFF;
 	text-decoration:none;
 }
-li.active{
-	background-color:#A0A0A0;
-
+nav ul li ul{
+	position:absolute;
+	top: 40px;
+	left: -32px;
+	width: 234px;
+	display:none;
+}
+nav ul li ul li { 
+  background:#A0A0A0;
+  display: block; 
+}
+ul li ul li:hover {
+ 	background: #707070;
+}
+ul li.otvoreno ul {
+  display: block;
+  visibility: visible;
 }
 #glavni{
 	width:75%;
