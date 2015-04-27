@@ -15,17 +15,17 @@
 			<nav>
 				<ul>
 					<li><a href="projekat.html">Home</a></li>
-					<li><a href="about.html">About</a></li>
-					<li><a href="contact.html">Contact</a></li>
+					<li><a onclick="otvori('about')">About</a></li>
+					<li><a onclick="otvori('contact')">Contact</a></li>
 					<li id="dropdown"><a href="#">Fashion <span style="font-size: 9px">&#9660;</span></a>
 						<ul id="menu">
-							<li><a href="fashion.html">Home</a></li>
-							<li><a href="trends.html">Trends</a></li>
-							<li><a href="wear.html">3 ways to wear</a></li>
+							<li><a onclick="otvori('fashion')">Home</a></li>
+							<li><a onclick="otvori('trends')">Trends</a></li>
+							<li><a onclick="otvori('wear')">3 ways to wear</a></li>
 						</ul>
 					</li>
-					<li><a href="beauty.html">Beauty</a></li>
-					<li><a href="links.html">Links</a></li>
+					<li><a onclick="otvori('beauty')">Beauty</a></li>
+					<li><a onclick="otvori('links')">Links</a></li>
 				</ul>
 			</nav>
 			<div id="glavni">
@@ -96,6 +96,8 @@
 				<p>Copyright (c) 2015 EMFASHION.ba</p>
 			</div>
 		</div>
+		<script type="text/javascript" src="datoteka1.js"></script>
 		<script type="text/javascript" src="datoteka2.js"></script>
+		<script type="text/javascript" src="ajax.js"></script>
 	</body>
 </html>
