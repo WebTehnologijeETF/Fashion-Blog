@@ -163,6 +163,7 @@ ul li.otvoreno ul {
 	color:red;
 }
 table{
+	margin-top:30px;
 	border:1px;
 	width:700px;
 	table-layout:fixed;
@@ -191,6 +192,15 @@ label{
 	margin-bottom: 5px;
 }
 input[type="text"]{
+	font-family:Orbitron;
+	width: 85%;
+	height:30px;
+	padding: 5px;
+	border:1px solid #404040;
+	border-radius:5px;
+	margin-bottom: 10px;
+}
+input[type="number"]{
 	font-family:Orbitron;
 	width: 85%;
 	height:30px;
@@ -231,4 +241,11 @@ img.kontrola-greska {
 p.kontrola-greska {
 	margin-top: -10px;
 	color:red !important;
+}
+
+.proizvod-slika {
+	height: 100px;
+}
+#listaProizvoda button {
+	display: inline;
 }
