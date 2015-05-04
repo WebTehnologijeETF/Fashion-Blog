@@ -29,7 +29,7 @@ function validirajFormu () {
 	
 	if (ime.value === "" || !validnostImena(ime.value)) {
 		postaviGresku(ime, true);
-		validno = false
+		validno = false;
 	} else {
 		postaviGresku(ime, false);
 	}
@@ -42,11 +42,36 @@ function validirajFormu () {
 	}
 	if(poruka.value===""){
 		postaviGresku(poruka, true);
-		validno = false
+		validno = false;
 	}
 	else{
 		postaviGresku(poruka, false);
 	}
 
 	return validno;
+}
+
+function pokusajPoslati() {
+	var form = document.getElementById("kontaktForma");
+	var xhr = new XMLHttpRequest();
+	var url = "http://zamger.etf.unsa.ba/wt/postanskiBroj.php";
+	var mjesto = document.getElementById("mjesto");
+	var postanskiBroj = document.getElementById("postanskiBroj");
+
+	if (validirajFormu()) {
+		xhr.open("GET", url + "?mjesto=" + mjesto.value + "&postanskiBroj=" + postanskiBroj.value);
+		xhr.onreadystatechange = function () {
+			var data = null;
+			if (xhr.readyState === 4) {
+				data = JSON.parse(xhr.responseText);
+				if (data.ok) {
+					form.submit();
+				} else {
+					postaviGresku(mjesto, true);
+					postaviGresku(postanskiBroj, true);
+				}
+			}
+		};
+		xhr.send();	
+	}
 }

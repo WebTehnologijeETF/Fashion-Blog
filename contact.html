@@ -1,7 +1,7 @@
 <div id="podstranice">
 	<h3>Contact</h3>
 	<p>I love recieving emails from readers or followers, so please do not hesitate to contact me with queries or just general chit chat!</p>
-	<FORM onsubmit="return validirajFormu()">
+	<FORM id="kontaktForma">
 		<fieldset>
 			<label>NAME</label>
 			<div class="kontrola">
@@ -15,6 +15,18 @@
 				<img class="kontrola-greska" src="warning.png" alt="uzvicnik">
 				<p class="kontrola-greska">Email adresa nije validna!</p>
 			</div>
+			<label>MJESTO</label>
+			<div class="kontrola">
+				<input name="mjesto" id="mjesto" type="text" placeholder="Sarajevo">
+				<img class="kontrola-greska" src="warning.png" alt="uzvicnik">
+				<p class="kontrola-greska">Mjesto ne postoji, ili nije validno!</p>
+			</div>
+			<label>POŠTANSKI BROJ</label>
+			<div class="kontrola">
+				<input name="postanskiBroj" id="postanskiBroj" type="text" placeholder="71000">
+				<img class="kontrola-greska" src="warning.png" alt="uzvicnik">
+				<p class="kontrola-greska">Poštanski broj nije validan!</p>
+			</div>
 			<label>SUBJECT</label>
 			<input name="naslov" id="subject" type="text" placeholder="Subject">
 			<label>YOUR MESSAGE</label>
@@ -23,7 +35,7 @@
 				<img class="kontrola-greska" src="warning.png" alt="uzvicnik">
 				<p class="kontrola-greska">Poruka je obavezna!</p>
 			</div>
-			<input type="submit" value="SEND">
+			<button type="button" onclick="pokusajPoslati()">SEND</button>
 		</fieldset>
 	</FORM>
 </div>
