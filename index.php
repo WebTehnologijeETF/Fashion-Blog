@@ -3,7 +3,7 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title>Glavni html</title>
+		<title>Fashion Blog</title>
 		<link rel="stylesheet" type="text/css" href="stil.css">
 	</head>
 	<body>
