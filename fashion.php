@@ -1,7 +1,9 @@
+<?php include("funkcije.php") ?>
 <div id="podstranice">
 	<h3>Fashion</h3>
 	<div class="novost">
-		<p>March 26, 2015</p>
+		<p>26.03.2015. 21:23:12</p>
+		<p>Emina Muharemovic</p>
 		<h4>THE 10 MOST VALUABLE LUXURY BRAND IN THE WORLD</h4>
 		<TABLE>
 			<CAPTION></CAPTION>
@@ -24,23 +26,9 @@
 		</TABLE>
 	</div>
 	<div class="novost">
-		<p>March 23, 2015</p>
-		<h4>OOTD: WIDE</h4>
-		<img src="fashionPhoto1.jpg" alt="novost1" width=700>
-		<p> While cleaning out my closet and boxes, I'm finding different items that for a long time has been forgotten. One of my favorite findings may be these jeans. I don't know if it's because the wide and comfortable legs, or the soft tuch. Either way it's a fun pant!</p><br>
-		<a href="#">View More Details</a>
+		<?php foreach(procitajSveNovosti("novosti\\fashion") as $novost) { ?>
+					<?php include("novost.php") ?>	
+				<?php } ?>
 	</div>
-	<div class="novost">
-		<p>March 22, 2015</p>
-		<h4>LONDON STREET STYLE</h4>
-		<img src="fashionPhoto2.jpg" alt="novost2" width=700>
-		<p>The fashion month marathon runs on! Part two of fashion month is now under way in London.</p><br>
-		<a href="#">View More Details</a>
-	</div>
-	<div class="novost">
-		<p>March 19, 2015</p>
-		<h4>WISHLIST UPDATE</h4>
-		<img src="fashionPhoto3.jpg" alt="novost3" width=700>
-		<a href="#">View More Details</a>
-	</div>
+	
 </div>

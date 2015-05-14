@@ -1,6 +1,6 @@
 function otvori(stranica) {
 	var xhr = new XMLHttpRequest();
-	xhr.open("get", stranica + ".html", true);
+	xhr.open("get", stranica, true);
 	xhr.onreadystatechange = function () {
 		if (xhr.readyState === 4) {
 			var html = this.responseText;
