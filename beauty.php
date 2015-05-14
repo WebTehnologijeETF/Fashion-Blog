@@ -2,7 +2,7 @@
 <div id="podstranice">
 	<h3>Beauty</h3>
 	<div class="novost">
-		<?php foreach(procitajSveNovosti("novosti\\beauty") as $novost) { ?>
+		<?php foreach(procitajSveNovosti("beauty") as $novost) { ?>
 					<?php include("novost.php") ?>	
 				<?php } ?>
 	</div>

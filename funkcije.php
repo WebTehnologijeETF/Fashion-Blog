@@ -1,8 +1,12 @@
 <?php
 	define("VRIJEME_FORMAT", "d.m.Y. H:i:s");
 
-	function procitajNovost($file) {
-		$handle = fopen($file, "r");
+	function ocistiPutanju($file) {
+		return str_replace([".", "/"], array(), $file);
+	}
+
+	function procitajNovost($folder, $file) {
+		$handle = fopen("novosti/". $folder . "/" . $file . ".txt", "r");
 		if ($handle) {
 			$linije = array();
 	    	while (($line = fgets($handle)) !== false) {
@@ -44,6 +48,7 @@
 	    		"slika" => $slika,
 	    		"tekst" => $tekst,
 	    		"file" => $file,
+	    		"folder" => $folder,
 	    		"detaljniTekst" => $detaljniTekst
 	    	);
 		}
@@ -59,8 +64,8 @@
 
 	function procitajSveNovosti($folder) {
 		$novosti = array();
-		foreach(glob($folder . "\\*.txt") as $file) {
-			array_push($novosti, procitajNovost($file));
+		foreach(glob("novosti/" . $folder . "/*.txt") as $file) {
+			array_push($novosti, procitajNovost($folder, basename($file, ".txt")));
 		}
 
 		// sortiraj novosti

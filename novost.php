@@ -7,6 +7,6 @@
 	<br>
 
 	<?php if ($novost["detaljniTekst"]) { ?> 
-		<a href="#" onclick="otvori('detaljno.php?file=<?= urlencode(basename($novost["file"], ".txt")) ?>')">View More Details</a>
+		<a href="#" onclick="otvori('detaljno.php?folder=<?=urlencode($novost["folder"]) ?>&file=<?= urlencode($novost["file"]) ?>')">View More Details</a>
 	<?php } ?>
 </div>

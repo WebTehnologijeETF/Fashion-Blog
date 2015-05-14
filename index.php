@@ -30,7 +30,7 @@
 				</ul>
 			</nav>
 			<div id="glavni">
-				<?php foreach(procitajSveNovosti("novosti\\home") as $novost) { ?>
+				<?php foreach(procitajSveNovosti("home") as $novost) { ?>
 					<?php include("novost.php") ?>	
 				<?php } ?>
 			</div>

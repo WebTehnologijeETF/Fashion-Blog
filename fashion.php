@@ -26,7 +26,7 @@
 		</TABLE>
 	</div>
 	<div class="novost">
-		<?php foreach(procitajSveNovosti("novosti\\fashion") as $novost) { ?>
+		<?php foreach(procitajSveNovosti("fashion") as $novost) { ?>
 					<?php include("novost.php") ?>	
 				<?php } ?>
 	</div>

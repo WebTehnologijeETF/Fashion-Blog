@@ -1,5 +1,14 @@
-<?php include("funkcije.php") ?>
-<?php $novost = procitajNovost("novosti\\home\\" . $_GET["file"] . ".txt"); ?>
+<?php 
+	include("funkcije.php");
+	$folder = ocistiPutanju($_GET["folder"]);
+	$file = ocistiPutanju($_GET["file"]);
+
+	if (empty($folder) || empty($file)) {
+		die("Parametri nisu validni.");
+	}
+
+	$novost = procitajNovost($folder, $file);
+?>
 <div class="novost">
 	<p><?= $novost["datum"]->format(VRIJEME_FORMAT) ?></p>
 	<p><?= $novost["autor"] ?></p>
