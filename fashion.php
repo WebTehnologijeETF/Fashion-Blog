@@ -28,7 +28,7 @@
 	<div class="novost">
 		<?php
             $kategorija = "fashion";
-            $veza = new PDO("mysql:dbname=fashionblog;host=localhost;charset=utf8", "admin7brFusy", "UTkFmQhGANww");
+            $veza = new PDO("mysql:dbname=fashionblog;host=127.11.112.2;charset=utf8", "admin1XHlxGM", "3JSla63s9yfj");
             $veza->exec("set names utf8");
             $stmt = $veza->prepare("select id, UNIX_TIMESTAMP(datum) datum2, autor, naslov, slika, tekst, detaljniTekst, kategorija from novost where kategorija=:kategorija order by datum desc");
             $stmt->bindParam(":kategorija", $kategorija);

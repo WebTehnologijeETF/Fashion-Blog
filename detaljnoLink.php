@@ -5,7 +5,7 @@
   </head>
     <body>
           <?php
-              $veza = new PDO("mysql:dbname=novosti;host=localhost;charset=utf8", "emina92", "emina92");
+              $veza = new PDO("mysql:dbname=fashionblog;host=127.11.112.2;charset=utf8", "admin1XHlxGM", "3JSla63s9yfj");
               $id = $_GET['id'];
               $veza->exec("set names utf8");
               $stmt = $veza->prepare("select id, UNIX_TIMESTAMP(datum) datum2, autor, naslov, slika, tekst, detaljniTekst, kategorija from novost where id=:id");
